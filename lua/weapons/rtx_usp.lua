@@ -228,6 +228,15 @@ SWEP.Attachments = {
 }
 SWEP.AttachmentDependencies = {}
 SWEP.AttachmentExclusions = {}
+SWEP.AttachmentTableOverride = {
+    ["glock17_osprey9"] = {
+        ["ViewModelBoneMods"] = {
+            ["vm_barrel_supp"] = { scale = Vector(1, 1, 1), pos = Vector(0, 7.4, 0), angle = Angle(0, 0, 0)}
+        },
+    }
+}
+
+
 
 local wscale = Vector(1, 1, 1)
 
@@ -285,7 +294,7 @@ SWEP.LaserSightModAttachmentWorld = 4
 
 SWEP.FlashlightLightsourcePos = Vector(0, 0, 0)
 SWEP.FlashlightLightsourceAng = Angle(0, 0, 0)
-SWEP.FlashlightLightsourcePos_APLc = Vector(0, 0.7, 6.25)
+SWEP.FlashlightLightsourcePos_APLc = Vector(0, -4.75, -0.05)
 SWEP.FlashlightLightsourceAng_APLc = Angle(0, 0, 0)
 
 -- the german one
