@@ -19,17 +19,17 @@ SWEP.Weight				= 30			-- This controls how "good" the weapon is for autopickup.
 SWEP.Calibre = "9x19mm"
 SWEP.Type = "Pistol"
 SWEP.Type_Displayed = "Pistol"
-SWEP.Ergonomics = 78
+SWEP.Ergonomics = 72
 
 --//SCREENSHAKE
-SWEP.ScreenShakeForceMultiplier = 0.4
-SWEP.ScreenShakeFOVMultiplier = 0.2
-SWEP.ScreenShakeSpeedMultiplier = 0.5
+SWEP.ScreenShakeForceMultiplier = 0.6
+SWEP.ScreenShakeFOVMultiplier = 0.4
+SWEP.ScreenShakeSpeedMultiplier = 0.7
 
 --//WEAPON STUFF
 SWEP.Primary.Sound = Sound("RTX_Glock17.Fire") -- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound = Sound("RTX_Glock17.Fire_Suppressed") -- This is the sound of the weapon, when silenced.
-SWEP.Primary.Damage = 29 -- Damage, in standard damage points.
+SWEP.Primary.Damage = 32 -- Damage, in standard damage points.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
 SWEP.Primary.Knockback = 0 --Autodetected if nil; this is the velocity kickback
 SWEP.Primary.HullSize = 0 --Big bullets, increase this value.  They increase the hull size of the hitscan bullet.
@@ -39,7 +39,7 @@ SWEP.Primary.RPM = 600 -- This is in Rounds Per Minute / RPM
 SWEP.Primary.Velocity = 315 -- m/s
 
 --//FIRE STUFF
-SWEP.FiresUnderwater = true
+SWEP.FiresUnderwater = false
 SWEP.SelectiveFire = false -- Allow selecting your firemode?
 SWEP.DisableBurstFire = true -- Only auto/single?
 SWEP.OnlyBurstFire = false -- No auto, only burst/single?
@@ -49,7 +49,7 @@ SWEP.FireModeName = nil -- Change to a text value to override it
 SWEP.FireSoundAffectedByClipSize = true -- Whenever adjuct pitch (and proably other properties) of fire sound based on current clip / maxclip
 
 --//AMMO RELATED
-SWEP.Primary.ClipSize = 17 -- This is the size of a clip
+SWEP.Primary.ClipSize = 15 -- This is the size of a clip
 SWEP.Primary.DefaultClip = SWEP.Primary.ClipSize * 10 -- This is the number of bullets the gun gives you, counting a clip as defined directly above.
 SWEP.Primary.Ammo = "pistol" -- What kind of ammo.  Options, besides custom, include pistol, 357, smg1, ar2, buckshot, slam, SniperPenetratedRound, and AirboatGun.
 --Pistol, buckshot, and slam like to ricochet. Use AirboatGun for a light metal peircing shotgun pellets
@@ -208,27 +208,15 @@ SWEP.EventTable = {
 		{time = 0, type = "sound", value = Sound("TFA_INS2.PistolHolster")},
 	},
 	["reload_empty"] = {
-		{time = 0.1, type = "sound", value = "weapons/glock17/glock_reload_magout_01.wav"},
-		{time = 0.92, type = "sound", value = "weapons/glock17/glock_reload_magin_01.wav"},
-		{time = 50 / 30, type = "sound", value = "weapons/glock17/slideback.wav"},
-		{time = 53 / 30, type = "sound", value = "weapons/glock17/SlideForward.wav"},
-		
-	},
-	["reload_empty_fast"] = {
-		{time = 0.1, type = "sound", value = "weapons/glock17/glock_reload_magout_01.wav"},
-		{time = 0.92, type = "sound", value = "weapons/glock17/glock_reload_magin_01.wav"},
-		{time = 44 / 30, type = "sound", value = "weapons/glock17/slide_release.wav"},
-		
+		{time = 0.1, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagOut.wav"},
+		{time = 0.92, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagIn.wav"},
+		{time = 53 / 30, type = "sound", value = "weapons/rtx_usp/USP_ReloadEmpty_SlideRelease.wav"},	
 	},
 	["reload"] = {
-		{time = 0.0, type = "sound", value = "weapons/glock17/cloth2.wav"},
-		{time = 0.35, type = "sound", value = "weapons/glock17/glock_reload_magout_01.wav"},
-		{time = 0.92, type = "sound", value = "weapons/glock17/glock_reload_magin_01.wav"},
-		{time = 1.324, type = "sound", value = "weapons/glock17/cloth.wav"},
+		{time = 0.35, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagOut.wav"},
+		{time = 0.92, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagIn.wav"},
 	},
-		["ready"] = {
-		{time = 0.3, type = "sound", value = "weapons/glock17/slideback.wav"},
-		{time = 0.55, type = "sound", value = "weapons/glock17/slide_release.wav"},
+	["ready"] = {
 	},
 	
 }
