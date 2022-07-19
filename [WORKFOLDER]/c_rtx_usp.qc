@@ -19,7 +19,7 @@ $cdmaterials "models\weapons\rtx\usp\"
 $attachment "muzzle" "vm_barrel" 0.00 3.70 0.40 rotate 0 90 -90
 $attachment "muzzle_supp" "vm_barrel_supp" 0.00 3.70 0.40 rotate 0 90 -90
 $attachment "shell" "vm_pivot" 0 0.9 0.9 rotate 0 140 180
-$attachment "camera" "camera" 0 0 0 rotate 90 0 0
+
 $attachment "flashlight_lightsource" "tag_flashlight_lightsource" 0 0 0 rotate -90 -90 0
 $attachment "slide" "vm_charge" 0 0 0 rotate -90 -90 0
 
