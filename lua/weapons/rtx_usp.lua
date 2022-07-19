@@ -159,6 +159,8 @@ SWEP.SprintAnimation = {
 	}
 }
 
+SWEP.Customize_Mode = TFA.Enum.LOCOMOTION_ANI
+
 SWEP.CustomizeAnimation = {
 	["in"] = {
 		["type"] = TFA.Enum.ANIMATION_SEQ, -- Sequence or act
@@ -209,7 +211,7 @@ SWEP.EventTable = {
 	},
 	["reload_empty"] = {
 		{time = 0.1, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagOut.wav"},
-		{time = 0.92, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagIn.wav"},
+		{time = 0.94, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagIn.wav"},
 		{time = 54 / 30, type = "sound", value = "weapons/rtx_usp/USP_ReloadEmpty_SlideRelease.wav"},	
 	},
 	["reload"] = {
