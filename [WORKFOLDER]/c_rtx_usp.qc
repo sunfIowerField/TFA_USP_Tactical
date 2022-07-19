@@ -16,11 +16,11 @@ $illumposition 0 0 0
 
 $cdmaterials "models\weapons\rtx\usp\"
 
-$attachment "muzzle" "vm_barrel" 0.00 3.70 0.40 rotate 0 90 -90
-$attachment "muzzle_supp" "vm_barrel_supp" 0.00 3.70 0.40 rotate 0 90 -90
-$attachment "shell" "vm_pivot" 0 0.9 0.9 rotate 0 140 180
-
-$attachment "flashlight_lightsource" "tag_flashlight_lightsource" 0 0 0 rotate -90 -90 0
+$attachment "muzzle" "vm_barrel" 0.00 3.7 0.25 rotate 0 90 0
+$attachment "muzzle_supp" "vm_barrel_supp" 0.00 3.7 0.25 rotate 0 90 0
+$attachment "shell" "vm_pivot" 0 1.5 0.9 rotate -160 -30 -90
+$attachment "camera" "camera" 0 0 0 rotate -90 -90 0
+$attachment "flashlight_lightsource" "tag_flashlight_lightsource" 0 0 0 rotate 0 -90 0
 $attachment "slide" "vm_charge" 0 0 0 rotate -90 -90 0
 
 $cbox 0 0 0 0 0 0
@@ -32,7 +32,7 @@ $definebone "ValveBiped.Bip01_Spine4" "body" 0.000006 -63 0 10.250387 -89.999982
 $definebone "tag_offset" "body" 0 -63 0 0 0 -179.999978 0 0 0 0 0 0
 $definebone "vm_pivot" "tag_offset" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "vm_barrel" "vm_pivot" 0 1.266849 1.105704 0 -179.999978 89.999982 0 0 0 0 0 0
-$definebone "vm_barrel_supp" "vm_pivot" 0 2 1.105704 0 -179.999978 89.999982 0 0 0 0 0 0
+$definebone "vm_barrel_supp" "vm_barrel" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "tag_weapon" "vm_pivot" 0 0 0 0 0 -89.999982 0 0 0 0 0 0
 $definebone "mixamorig:Hips" "body" 0.078038 -44.771561 -4.519745 0 0 -179.999964 0 0 0 0 0 0
 $definebone "mixamorig:Spine" "mixamorig:Hips" 0 4.343685 -0.554746 0 0 -7.278054 0 0 0 0 0 0

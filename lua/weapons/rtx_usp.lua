@@ -79,7 +79,7 @@ SWEP.ViewModelFOV			= 75		-- This controls how big the viewmodel looks.  Less is
 SWEP.ViewModelFlip			= false		-- Set this to true for CSS models, or false for everything else (with a righthanded viewmodel.)
 SWEP.UseHands = true --Use gmod c_arms system.
 -- SWEP.VMPos = Vector(-0.25, -0.15, -0.75)
-SWEP.VMPos = Vector(0, -2, 0.7)
+SWEP.VMPos = Vector(0.4, -1, 0.5)
 SWEP.VMAng = Vector(0, 0, 5)
 SWEP.VMPos_Additive = false --Set to false for an easier time using VMPos. If true, VMPos will act as a constant delta ON TOP OF ironsights, run, whateverelse
 --[[WORLDMODEL]]--
@@ -112,7 +112,7 @@ SWEP.CrouchAng = Vector(0, 0, -8.75)
 SWEP.data = {}
 SWEP.data.ironsights = 1 --Enable Ironsights
 SWEP.Secondary.IronFOV = 80 -- How much you 'zoom' in. Less is more!  Don't have this be <= 0.  A good value for ironsights is like 70.
-SWEP.IronSightsPos = Vector(-2.3, -2, 1.65)
+SWEP.IronSightsPos = Vector(-2.3, -1.2, 1.65)
 SWEP.IronSightsAng = Vector(0, 0, 5)
 SWEP.IronSightsReloadEnabled = true
 SWEP.IronSightsReloadLock = false
@@ -128,7 +128,7 @@ SWEP.InspectAng = Vector(24.622, 42.915, 15.477)
 --[[ANIMATION]]--
 SWEP.StatusLengthOverride = {
 	["reload"] = 34 / 30,
-	["reload_empty"] = 35 / 30,
+	["reload_empty"] = 75 / 30,
 	["reload_empty_fast"] = 35 / 30,
 }
 
@@ -210,7 +210,7 @@ SWEP.EventTable = {
 	["reload_empty"] = {
 		{time = 0.1, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagOut.wav"},
 		{time = 0.92, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagIn.wav"},
-		{time = 53 / 30, type = "sound", value = "weapons/rtx_usp/USP_ReloadEmpty_SlideRelease.wav"},	
+		{time = 54 / 30, type = "sound", value = "weapons/rtx_usp/USP_ReloadEmpty_SlideRelease.wav"},	
 	},
 	["reload"] = {
 		{time = 0.35, type = "sound", value = "weapons/rtx_usp/USP_ReloadNormal_MagOut.wav"},
@@ -224,6 +224,7 @@ SWEP.EventTable = {
 --[[ATTACHMENTS]]--
 SWEP.Attachments = {
 	[11] = { atts = { "glock17_osprey9" }},
+	[12] = { atts = { "grovez_flashlight_inforce_wild1" }},
 }
 SWEP.AttachmentDependencies = {}
 SWEP.AttachmentExclusions = {}
@@ -246,7 +247,7 @@ SWEP.VElements = {
 		model = "models/weapons/tfa_grovez/mods/tactical/flashlight_inforce_wild1/tactical.mdl",
 		bone = "tag_weapon",
 		rel = "",
-		pos = Vector(0,4,0.4),
+		pos = Vector(0,3.7,0.5),
 		angle = Angle(0,90,180),
 		size = Vector(1.3,1.3,1.3),
 		color = Color(255, 255, 255, 255),
