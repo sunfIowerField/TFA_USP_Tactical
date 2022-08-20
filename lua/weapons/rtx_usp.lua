@@ -27,7 +27,7 @@ SWEP.ScreenShakeFOVMultiplier = 0.4
 SWEP.ScreenShakeSpeedMultiplier = 0.7
 
 --//WEAPON STUFF
-SWEP.Primary.Sound = Sound("RTX_Glock17.Fire") -- This is the sound of the weapon, when you shoot.
+SWEP.Primary.Sound = Sound("RTX_USP.Fire") -- This is the sound of the weapon, when you shoot.
 SWEP.Primary.SilencedSound = Sound("RTX_Glock17.Fire_Suppressed") -- This is the sound of the weapon, when silenced.
 SWEP.Primary.Damage = 32 -- Damage, in standard damage points.
 SWEP.Primary.Force = nil --Force value, leave nil to autocalc
