@@ -1,0 +1,19 @@
+VertexLitGeneric
+{
+	$basetexture "models/weapons/rtx/usp/1p_usp_d"
+	$bumpmap "models/weapons/rtx/usp/1p_usp_n"
+
+	$envmap "env_cubemap"
+	$envmaptint "[0.01 0.01 0.01]"
+	$envmapfresnel 0.01
+
+	$phong 1
+	$phongexponenttexture "models/weapons/rtx/usp/1p_usp_e"
+	$phongfresnelranges "[0.6 0.8 1]"
+	$phongboost 0.4
+
+        $detail "models/weapons/rtx/usp/1p_usp_emissive"
+       $detailscale 1        
+       $detailblendfactor 10 
+       $detailblendmode 5    
+}
